@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>臭羽爛蝦 Badminton Club</title>
+  <meta name="description" content="一群來自台南的羽球愛好者組成的快樂業餘團隊！">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', 'Fredoka', Arial, sans-serif;
+      background: linear-gradient(120deg, #4fd1c5 0%, #68d391 60%, #fbbf24 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+    /* 泡泡動畫背景 */
+    .bubble {
+      position: fixed;
+      bottom: -150px;
+      border-radius: 50%;
+      opacity: 0.45;
+      z-index: 0;
+      animation: float 18s linear infinite;
+      filter: blur(6px);
+      pointer-events: none;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(var(--s));
+        opacity: 0.55;
+      }
+      80% {
+        opacity: 0.38;
+      }
+      100% {
+        transform: translateY(-120vh) scale(var(--s));
+        opacity: 0;
+      }
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 40px 16px 32px 16px;
+      background: rgba(255,255,255,0.86);
+      border-radius: 36px;
+      box-shadow: 0 6px 40px 0 rgba(0,0,0,0.16);
+      margin-top: 48px;
+      margin-bottom: 48px;
+      animation: fadeinup 1.4s cubic-bezier(.2,.7,.5,1) both;
+    }
+    @keyframes fadeinup {
+      from { opacity:0; transform: translateY(80px) scale(0.95);}
+      to   { opacity:1; transform: translateY(0) scale(1);}
+    }
+    h1 {
+      font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+      text-align: center;
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.18em;
+      background: linear-gradient(90deg, #4fd1c5 0%, #fbbf24 80%);
+      border-radius: 24px;
+      box-shadow: 0 2px 24px 0 #fbbf2477;
+      margin: -70px 0 24px 0;
+      padding: 18px 0 14px 0;
+      filter: drop-shadow(0 6px 16px #4fd1c555);
+      animation: bounce-in 1.2s 0.3s cubic-bezier(.36,.07,.19,.97) both;
+    }
+    @keyframes bounce-in {
+      0% { transform: scale(0.2) translateY(-90px); opacity:0;}
+      70% { transform: scale(1.09) translateY(20px);}
+      100% { transform: scale(1) translateY(0); opacity:1;}
+    }
+    .logo-wrap {
+      width: 90px;
+      height: 90px;
+      margin: -70px auto 8px;
+      display: flex; justify-content: center; align-items: center;
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 4px 18px #68d39188;
+      animation: logo-pop 1.2s 0.2s cubic-bezier(.28,1.6,.53,.97) both;
+    }
+    @keyframes logo-pop {
+      0% { transform: scale(0);}
+      80% { transform: scale(1.25);}
+      100% { transform: scale(1);}
+    }
+    .desc {
+      font-size: 1.1rem;
+      color: #444;
+      text-align: center;
+      margin: 6px 0 26px 0;
+      line-height: 1.7;
+    }
+    .highlight {
+      color: #fbbf24;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      font-size: 1.15em;
+    }
+    .section-title {
+      color: #4fd1c5;
+      margin-top: 28px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 1.32em;
+      letter-spacing: 0.07em;
+    }
+    ul.locations, ul.schedule {
+      margin: 0 0 16px 0;
+      padding: 0;
+      list-style: none;
+      font-size: 1.08em;
+    }
+    ul.locations li, ul.schedule li {
+      margin-bottom: 4px;
+      color: #222;
+      background: #f7fafc;
+      border-radius: 16px;
+      padding: 6px 12px;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .yt-section {
+      margin-top: 30px;
+      margin-bottom: 16px;
+      text-align: center;
+      animation: fadeinup 1.6s 0.2s cubic-bezier(.3,.7,.5,1) both;
+    }
+    .yt-title {
+      color: #fbbf24;
+      font-size: 1.18em;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .yt-frame-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 430px;
+      aspect-ratio: 9/16;
+      margin: 0 auto;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px #4fd1c544;
+      background: #000;
+    }
+    .yt-frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 32px;
+      margin-bottom: 6px;
+      animation: fadeinup 1.3s 0.3s cubic-bezier(.3,.7,.5,1) both;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin: 8px 12px;
+      padding: 11px 28px;
+      background: linear-gradient(90deg,#4fd1c5 20%,#fbbf24 100%);
+      color: #fff;
+      font-weight: 800;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 20px #fbbf2455;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      transition: background .18s,transform .16s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(90deg,#fbbf24 20%,#4fd1c5 100%);
+      transform: scale(1.08) rotate(-2deg);
+      color: #fff;
+    }
+    .faq-list details {
+      background:#f7fafc;
+      margin-bottom:8px;
+      border-radius:12px;
+      padding:8px 14px;
+      font-size:1.05em;
+    }
+    .faq-list summary { font-weight:bold; cursor:pointer; }
+    .faq-list div { color:#444; margin-top:2px; }
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: #6e7b86;
+      font-size: 0.98em;
+      padding-bottom: 10px;
+      letter-spacing: 0.04em;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 22px 5px 14px 5px; }
+      h1 { font-size: 2.1rem; }
+      .logo-wrap { width: 64px; height: 64px; margin: -50px auto 8px; }
+      .yt-frame-wrap { max-width: 98vw; }
+    }
+  </style>
+</head>
+<body>
+  <!-- 泡泡動畫 -->
+  <script>
+    // 自動生成 18 個不同顏色與透明度的泡泡
+    for (let i = 0; i < 18; i++) {
+      const b = document.createElement('div');
+      b.className = 'bubble';
+      const size = 38 + Math.random() * 110;
+      b.style.width = b.style.height = size + "px";
+      b.style.left = (Math.random() * 100) + "vw";
+      b.style.background = `radial-gradient(circle at 60% 40%, #fff8, #4fd1c555, #fbbf2440 80%)`;
+      b.style.setProperty('--s', (0.7 + Math.random() * 1.1).toFixed(2));
+      b.style.animationDuration = (13 + Math.random() * 8) + "s";
+      b.style.animationDelay = (Math.random() * 10) + "s";
+      document.body.appendChild(b);
+    }
+  </script>
+
+  <div class="container">
+    <div class="logo-wrap">
+      <!-- 羽毛球icon SVG -->
+      <svg width="68" height="68" viewBox="0 0 80 80" fill="none">
+        <circle cx="40" cy="40" r="34" fill="#fbbf24"/>
+        <ellipse cx="40" cy="32" rx="16" ry="7" fill="#4fd1c5"/>
+        <ellipse cx="40" cy="46" rx="12" ry="4" fill="#68d391"/>
+        <ellipse cx="40" cy="38" rx="6" ry="2.1" fill="#fff"/>
+      </svg>
+    </div>
+    <h1>臭羽爛蝦</h1>
+    <div class="desc">
+      一群來自台南的羽球愛好者組成的快樂業餘團隊！<br>
+      <span class="highlight">歡迎每一位熱愛運動、愛搞笑的新朋友加入！</span>
+    </div>
+
+    <div>
+      <div class="section-title">📍 固定出沒地點</div>
+      <ul class="locations">
+        <li>北安羽球館</li>
+        <li>和緯羽球館</li>
+      </ul>
+      <div class="section-title">📆 每週活動日</div>
+      <ul class="schedule">
+        <li>週五 晚上</li>
+        <li>週六／週日 不定期晚場</li>
+      </ul>
+    </div>
+
+    <div class="yt-section">
+      <div class="yt-title">🎬 精彩活動影片</div>
+      <div class="yt-frame-wrap">
+        <iframe src="https://www.youtube.com/embed/oegJ90PabaY"
+          title="臭羽爛蝦 YouTube Shorts"
+          allowfullscreen
+          allow="autoplay; encrypted-media"
+        ></iframe>
+      </div>
+      <div style="margin-top:8px;">
+        <a href="https://www.youtube.com/channel/UC2ptpAI0AMUH8kOkL7a8Xow" target="_blank" class="cta-btn">觀看更多影片</a>
+      </div>
+    </div>
+
+    <div class="cta">
+      <div style="color:#222;font-weight:bold;margin-bottom:10px;">
+        想一起打球？歡迎私訊我們，<br>加入臭羽爛蝦的快樂行列！
+      </div>
+      <a href="https://line.me/ti/g/UHS6Zer__D" target="_blank" class="cta-btn">加入LINE群</a>
+    </div>
+
+    <div class="section-title">🙋 常見問題 FAQ</div>
+    <div class="faq-list">
+      <details><summary>每次活動收費怎麼算？</summary><div>場租+球費AA制，平均一次約200~250元。</div></details>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 臭羽爛蝦 Badminton Club | 台南在地羽球團
+    </div>
+  </div>
+</body>
+</html>

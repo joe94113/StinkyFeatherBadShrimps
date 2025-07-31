@@ -66,7 +66,7 @@
       background: linear-gradient(90deg, #4fd1c5 0%, #fbbf24 80%);
       border-radius: 24px;
       box-shadow: 0 2px 24px 0 #fbbf2477;
-      margin: -70px 0 24px 0;
+      margin: 0 0 24px 0;  /* ← 這裡已改為不重疊的安全距離 */
       padding: 18px 0 14px 0;
       filter: drop-shadow(0 6px 16px #4fd1c555);
       animation: bounce-in 1.2s 0.3s cubic-bezier(.36,.07,.19,.97) both;
@@ -79,7 +79,7 @@
     .logo-wrap {
       width: 90px;
       height: 90px;
-      margin: -70px auto 8px;
+      margin: 0 auto 18px auto;  /* ← LOGO和標題完全不重疊 */
       display: flex; justify-content: center; align-items: center;
       background: #fff;
       border-radius: 50%;
@@ -204,7 +204,7 @@
     @media (max-width: 600px) {
       .container { padding: 22px 5px 14px 5px; }
       h1 { font-size: 2.1rem; }
-      .logo-wrap { width: 64px; height: 64px; margin: -50px auto 8px; }
+      .logo-wrap { width: 64px; height: 64px; margin: 0 auto 12px auto; }
       .yt-frame-wrap { max-width: 98vw; }
     }
   </style>

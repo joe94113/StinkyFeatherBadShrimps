@@ -53,21 +53,6 @@ Everyone is welcome—no matter your skill level. We play badminton for fun, exe
 
 ---
 
-## 🚀 如何使用 How to Use
-
-1. 本網頁為純 HTML/CSS/JS，**可直接部署於 GitHub Pages**。
-2. 將 [`index.html`](./index.html) 上傳到你的 GitHub repo。
-3. （建議）可根據需要替換照片、公告或活動資訊！
-
----
-
-## 📸 團員投稿／照片
-
-歡迎團員提供活動照片、心情語錄，豐富我們的網站內容！  
-Please feel free to contribute your photos or stories.
-
----
-
 ## 📄 License
 
 本專案僅供臭羽爛蝦團隊自用與推廣，不做商業用途。  

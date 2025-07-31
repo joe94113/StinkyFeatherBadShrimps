@@ -8,12 +8,15 @@
   <link rel="canonical" href="https://joe94113.github.io/StinkyFeatherBadShrimps/">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
 
+  <!-- favicon -->
+  <link rel="icon" href="logo_150x150.png" type="image/png">
+
   <!-- Open Graph for Facebook & LINE -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="臭羽爛蝦 Badminton Club｜台南羽球快樂社群">
   <meta property="og:description" content="台南在地羽球團，歡迎每位喜歡羽球與搞笑的新朋友！每週固定聚會，氣氛歡樂，歡迎加入LINE群！">
   <meta property="og:url" content="https://joe94113.github.io/StinkyFeatherBadShrimps/">
-  <meta property="og:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png"> <!-- 若有專屬圖片請更換此連結 -->
+  <meta property="og:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png">
   <meta property="og:locale" content="zh_TW">
 
   <!-- Twitter Card -->
@@ -157,6 +160,13 @@
       border-radius: 50%;
       box-shadow: 0 4px 18px #68d39188;
       animation: logo-pop 1.2s 0.2s cubic-bezier(.28,1.6,.53,.97) both;
+      overflow: hidden;
+    }
+    .logo-wrap img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: block;
     }
     @keyframes logo-pop {
       0% { transform: scale(0);}
@@ -278,6 +288,7 @@
       .container { padding: 22px 5px 14px 5px; }
       h1 { font-size: 2.1rem; }
       .logo-wrap { width: 64px; height: 64px; margin: 0 auto 12px auto; }
+      .logo-wrap img { width: 64px; height: 64px; }
       .yt-frame-wrap { max-width: 98vw; }
     }
   </style>
@@ -310,13 +321,7 @@
 
   <div class="container">
     <div class="logo-wrap">
-      <!-- 羽毛球icon SVG，若有專屬LOGO圖片也可改為<img src="logo.png" ...> -->
-      <svg width="68" height="68" viewBox="0 0 80 80" fill="none" aria-label="臭羽爛蝦羽球社LOGO">
-        <circle cx="40" cy="40" r="34" fill="#fbbf24"/>
-        <ellipse cx="40" cy="32" rx="16" ry="7" fill="#4fd1c5"/>
-        <ellipse cx="40" cy="46" rx="12" ry="4" fill="#68d391"/>
-        <ellipse cx="40" cy="38" rx="6" ry="2.1" fill="#fff"/>
-      </svg>
+      <img src="logo.png" alt="臭羽爛蝦 LOGO">
     </div>
     <h1>臭羽爛蝦</h1>
     <div class="desc">

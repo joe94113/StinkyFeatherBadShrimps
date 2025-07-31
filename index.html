@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>臭羽爛蝦 Badminton Club</title>
-  <meta name="description" content="一群來自台南的羽球愛好者組成的快樂業餘團隊！">
+  <title>臭羽爛蝦 Badminton Club｜台南羽球快樂社群</title>
+  <meta name="description" content="台南羽球快樂團隊，歡迎新朋友加入。每週聚會，氣氛超好！加入LINE群一起打羽球，認識新朋友。">
+  <link rel="canonical" href="https://joe94113.github.io/StinkyFeatherBadShrimps/">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph for Facebook & LINE -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="臭羽爛蝦 Badminton Club｜台南羽球快樂社群">
+  <meta property="og:description" content="台南在地羽球團，歡迎每位喜歡羽球與搞笑的新朋友！每週固定聚會，氣氛歡樂，歡迎加入LINE群！">
+  <meta property="og:url" content="https://joe94113.github.io/StinkyFeatherBadShrimps/">
+  <meta property="og:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png"> <!-- 若有專屬圖片請更換此連結 -->
+  <meta property="og:locale" content="zh_TW">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="臭羽爛蝦 Badminton Club｜台南羽球快樂社群">
+  <meta name="twitter:description" content="台南在地羽球團，歡迎每位喜歡羽球與搞笑的新朋友！每週固定聚會，氣氛歡樂，歡迎加入LINE群！">
+  <meta name="twitter:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png">
+
+  <!-- FAQ 結構化資料 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "每次活動收費怎麼算？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "場租+球費AA制，平均一次約200~250元。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "需要自備球拍嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "建議自備球拍，若沒有也可先跟團員借用。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "新手可以加入嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "歡迎各級程度，重點是有熱情。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- 組織／團隊 Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "SportsTeam",
+    "name": "臭羽爛蝦 Badminton Club",
+    "sport": "Badminton",
+    "memberOf": {
+      "@type": "SportsOrganization",
+      "name": "台南在地羽球社團"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "台南市"
+    },
+    "url": "https://joe94113.github.io/StinkyFeatherBadShrimps/",
+    "sameAs": [
+      "https://www.youtube.com/channel/UC2ptpAI0AMUH8kOkL7a8Xow",
+      "https://line.me/ti/g/UHS6Zer__D"
+    ]
+  }
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -15,7 +88,6 @@
       overflow-x: hidden;
       position: relative;
     }
-    /* 泡泡動畫背景 */
     .bubble {
       position: fixed;
       bottom: -150px;
@@ -66,7 +138,7 @@
       background: linear-gradient(90deg, #4fd1c5 0%, #fbbf24 80%);
       border-radius: 24px;
       box-shadow: 0 2px 24px 0 #fbbf2477;
-      margin: 0 0 24px 0;  /* ← 這裡已改為不重疊的安全距離 */
+      margin: 0 0 24px 0;
       padding: 18px 0 14px 0;
       filter: drop-shadow(0 6px 16px #4fd1c555);
       animation: bounce-in 1.2s 0.3s cubic-bezier(.36,.07,.19,.97) both;
@@ -79,7 +151,7 @@
     .logo-wrap {
       width: 90px;
       height: 90px;
-      margin: 0 auto 18px auto;  /* ← LOGO和標題完全不重疊 */
+      margin: 0 auto 18px auto;
       display: flex; justify-content: center; align-items: center;
       background: #fff;
       border-radius: 50%;
@@ -104,13 +176,14 @@
       letter-spacing: 0.05em;
       font-size: 1.15em;
     }
-    .section-title {
+    h2.section-title {
       color: #4fd1c5;
       margin-top: 28px;
       margin-bottom: 8px;
       font-weight: 700;
       font-size: 1.32em;
       letter-spacing: 0.07em;
+      text-align: left;
     }
     ul.locations, ul.schedule {
       margin: 0 0 16px 0;
@@ -208,20 +281,19 @@
       .yt-frame-wrap { max-width: 98vw; }
     }
   </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPF2YHMW05"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-WPF2YHMW05');
   </script>
 </head>
 <body>
   <!-- 泡泡動畫 -->
   <script>
-    // 自動生成 18 個不同顏色與透明度的泡泡
     for (let i = 0; i < 18; i++) {
       const b = document.createElement('div');
       b.className = 'bubble';
@@ -238,8 +310,8 @@
 
   <div class="container">
     <div class="logo-wrap">
-      <!-- 羽毛球icon SVG -->
-      <svg width="68" height="68" viewBox="0 0 80 80" fill="none">
+      <!-- 羽毛球icon SVG，若有專屬LOGO圖片也可改為<img src="logo.png" ...> -->
+      <svg width="68" height="68" viewBox="0 0 80 80" fill="none" aria-label="臭羽爛蝦羽球社LOGO">
         <circle cx="40" cy="40" r="34" fill="#fbbf24"/>
         <ellipse cx="40" cy="32" rx="16" ry="7" fill="#4fd1c5"/>
         <ellipse cx="40" cy="46" rx="12" ry="4" fill="#68d391"/>
@@ -252,18 +324,16 @@
       <span class="highlight">歡迎每一位熱愛運動、愛搞笑的新朋友加入！</span>
     </div>
 
-    <div>
-      <div class="section-title">📍 固定出沒地點</div>
-      <ul class="locations">
-        <li>北安羽球館</li>
-        <li>和緯羽球館</li>
-      </ul>
-      <div class="section-title">📆 每週活動日</div>
-      <ul class="schedule">
-        <li>週五 晚上</li>
-        <li>週六／週日 不定期晚場</li>
-      </ul>
-    </div>
+    <h2 class="section-title">📍 固定出沒地點</h2>
+    <ul class="locations">
+      <li>北安羽球館</li>
+      <li>和緯羽球館</li>
+    </ul>
+    <h2 class="section-title">📆 每週活動日</h2>
+    <ul class="schedule">
+      <li>週五 晚上</li>
+      <li>週六／週日 不定期晚場</li>
+    </ul>
 
     <div class="yt-section">
       <div class="yt-title">🎬 精彩活動影片</div>
@@ -281,18 +351,26 @@
 
     <div class="cta">
       <div style="color:#222;font-weight:bold;margin-bottom:10px;">
-        想一起打球？歡迎私訊我們，<br>加入臭羽爛蝦的快樂行列！
+        想一起打球？歡迎私訊我們，<br>加入臭羽爛蝦的行列！
       </div>
       <a href="https://line.me/ti/g/UHS6Zer__D" target="_blank" class="cta-btn">加入LINE群</a>
     </div>
 
-    <div class="section-title">🙋 常見問題 FAQ</div>
+    <h2 class="section-title">🙋 常見問題 FAQ</h2>
     <div class="faq-list">
       <details><summary>每次活動收費怎麼算？</summary><div>場租+球費AA制，平均一次約200~250元。</div></details>
+      <details><summary>需要自備球拍嗎？</summary><div>建議自備球拍，若沒有也可先跟團員借用。</div></details>
+      <details><summary>新手可以加入嗎？</summary><div>歡迎各級程度。</div></details>
     </div>
 
     <div class="footer">
       &copy; 2025 臭羽爛蝦 Badminton Club | 台南在地羽球團
+      <br>
+      <span style="font-size:0.92em;">
+        社群連結：
+        <a href="https://line.me/ti/g/UHS6Zer__D" target="_blank" style="color:#4fd1c5;">LINE群</a>｜
+        <a href="https://www.youtube.com/channel/UC2ptpAI0AMUH8kOkL7a8Xow" target="_blank" style="color:#fbbf24;">YouTube頻道</a>
+      </span>
     </div>
   </div>
 </body>

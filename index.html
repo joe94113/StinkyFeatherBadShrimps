@@ -4,33 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>臭羽爛蝦 Badminton Club｜台南羽球團</title>
-  <meta name="description" content="台南羽球快樂團隊，歡迎新朋友加入。每週聚會，氣氛超好！加入LINE群一起打羽球，認識新朋友。">
+
+  <meta name="description" content="台南羽球快樂團隊，歡迎新朋友加入。為避免詐騙，入團採審核制：先留言申請或私訊團長，通過後再邀請入群。">
   <link rel="canonical" href="https://joe94113.github.io/StinkyFeatherBadShrimps/">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Noto+Sans+TC:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- favicon -->
   <link rel="icon" href="logo_150x150.png" type="image/png">
 
-  <!-- Open Graph for Facebook & LINE -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="臭羽爛蝦 Badminton Club｜台南羽球團">
-  <meta property="og:description" content="台南在地羽球團，歡迎每位喜歡羽球與搞笑的新朋友！每週固定聚會，氣氛歡樂，歡迎加入LINE群！">
+  <meta property="og:description" content="台南在地羽球團，歡迎新朋友！為避免詐騙，入團採審核制：先留言申請或私訊團長，通過後再邀請入群。">
   <meta property="og:url" content="https://joe94113.github.io/StinkyFeatherBadShrimps/">
   <meta property="og:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png">
   <meta property="og:locale" content="zh_TW">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="臭羽爛蝦 Badminton Club｜台南羽球團">
-  <meta name="twitter:description" content="台南在地羽球團，歡迎每位喜歡羽球與搞笑的新朋友！每週固定聚會，氣氛歡樂，歡迎加入LINE群！">
+  <meta name="twitter:description" content="台南在地羽球團，入團採審核制：先留言申請或私訊團長，通過後再邀請入群。">
   <meta name="twitter:image" content="https://joe94113.github.io/StinkyFeatherBadShrimps/logo.png">
 
-  <!-- FAQ 結構化資料 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "如何加入臭羽爛蝦？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "為避免詐騙，入團採審核制：請先填寫入團申請（留言自介）或私訊團長，通過後再邀請入群。"
+        }
+      },
       {
         "@type": "Question",
         "name": "每次活動收費怎麼算？",
@@ -51,7 +56,6 @@
   }
   </script>
 
-  <!-- 組織／團隊 Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -69,7 +73,6 @@
     "url": "https://joe94113.github.io/StinkyFeatherBadShrimps/",
     "sameAs": [
       "https://www.youtube.com/channel/UC2ptpAI0AMUH8kOkL7a8Xow",
-      "https://line.me/ti/g/UHS6Zer__D"
     ]
   }
   </script>
@@ -94,17 +97,9 @@
       pointer-events: none;
     }
     @keyframes float {
-      0% {
-        transform: translateY(0) scale(var(--s));
-        opacity: 0.55;
-      }
-      80% {
-        opacity: 0.38;
-      }
-      100% {
-        transform: translateY(-120vh) scale(var(--s));
-        opacity: 0;
-      }
+      0% { transform: translateY(0) scale(var(--s)); opacity: 0.55; }
+      80% { opacity: 0.38; }
+      100% { transform: translateY(-120vh) scale(var(--s)); opacity: 0; }
     }
     .container {
       position: relative;
@@ -120,8 +115,8 @@
       animation: fadeinup 1.4s cubic-bezier(.2,.7,.5,1) both;
     }
     @keyframes fadeinup {
-      from { opacity:0; transform: translateY(80px) scale(0.95);}
-      to   { opacity:1; transform: translateY(0) scale(1);}
+      from { opacity:0; transform: translateY(80px) scale(0.95); }
+      to   { opacity:1; transform: translateY(0) scale(1); }
     }
     h1 {
       font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
@@ -139,9 +134,9 @@
       animation: bounce-in 1.2s 0.3s cubic-bezier(.36,.07,.19,.97) both;
     }
     @keyframes bounce-in {
-      0% { transform: scale(0.2) translateY(-90px); opacity:0;}
-      70% { transform: scale(1.09) translateY(20px);}
-      100% { transform: scale(1) translateY(0); opacity:1;}
+      0% { transform: scale(0.2) translateY(-90px); opacity:0; }
+      70% { transform: scale(1.09) translateY(20px); }
+      100% { transform: scale(1) translateY(0); opacity:1; }
     }
     .logo-wrap {
       width: 90px;
@@ -154,16 +149,11 @@
       animation: logo-pop 1.2s 0.2s cubic-bezier(.28,1.6,.53,.97) both;
       overflow: hidden;
     }
-    .logo-wrap img {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      display: block;
-    }
+    .logo-wrap img { width: 90px; height: 90px; border-radius: 50%; display: block; }
     @keyframes logo-pop {
-      0% { transform: scale(0);}
-      80% { transform: scale(1.25);}
-      100% { transform: scale(1);}
+      0% { transform: scale(0); }
+      80% { transform: scale(1.25); }
+      100% { transform: scale(1); }
     }
     .desc {
       font-size: 1.1rem;
@@ -172,12 +162,7 @@
       margin: 6px 0 26px 0;
       line-height: 1.7;
     }
-    .highlight {
-      color: #fbbf24;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      font-size: 1.15em;
-    }
+    .highlight { color: #fbbf24; font-weight: bold; letter-spacing: 0.05em; font-size: 1.15em; }
     h2.section-title {
       color: #4fd1c5;
       margin-top: 28px;
@@ -203,18 +188,38 @@
       margin-right: 8px;
       margin-bottom: 8px;
     }
+
+    .notice {
+      background: #fff7ed;
+      border: 2px dashed #fbbf24;
+      border-radius: 18px;
+      padding: 12px 14px;
+      color: #4b5563;
+      line-height: 1.7;
+      margin-top: 10px;
+      margin-bottom: 6px;
+      font-size: 1.02em;
+    }
+    .notice b { color:#111827; }
+    .notice .tag {
+      display:inline-block;
+      background:#fbbf24;
+      color:#fff;
+      font-weight:800;
+      padding:2px 10px;
+      border-radius:999px;
+      margin-right:8px;
+      font-size:0.92em;
+      letter-spacing: .04em;
+    }
+
     .yt-section {
       margin-top: 30px;
       margin-bottom: 16px;
       text-align: center;
       animation: fadeinup 1.6s 0.2s cubic-bezier(.3,.7,.5,1) both;
     }
-    .yt-title {
-      color: #fbbf24;
-      font-size: 1.18em;
-      margin-bottom: 8px;
-      font-weight: bold;
-    }
+    .yt-title { color: #fbbf24; font-size: 1.18em; margin-bottom: 8px; font-weight: bold; }
     .yt-frame-wrap {
       position: relative;
       width: 100%;
@@ -226,48 +231,166 @@
       box-shadow: 0 8px 40px #4fd1c544;
       background: #000;
     }
-    .yt-frame-wrap iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-      display: block;
-    }
-    .cta {
-      text-align: center;
-      margin-top: 32px;
-      margin-bottom: 6px;
-      animation: fadeinup 1.3s 0.3s cubic-bezier(.3,.7,.5,1) both;
-    }
+    .yt-frame-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    .cta { text-align: center; margin-top: 28px; margin-bottom: 6px; animation: fadeinup 1.3s 0.3s cubic-bezier(.3,.7,.5,1) both; }
     .cta-btn {
       display: inline-block;
-      margin: 8px 12px;
-      padding: 11px 28px;
+      margin: 8px 10px;
+      padding: 11px 22px;
       background: linear-gradient(90deg,#4fd1c5 20%,#fbbf24 100%);
       color: #fff;
       font-weight: 800;
       border: none;
       border-radius: 30px;
-      font-size: 1.1em;
+      font-size: 1.05em;
       box-shadow: 0 4px 20px #fbbf2455;
       cursor: pointer;
       text-decoration: none;
       letter-spacing: 0.08em;
       transition: background .18s,transform .16s;
+      white-space: nowrap;
     }
-    .cta-btn:hover {
-      background: linear-gradient(90deg,#fbbf24 20%,#4fd1c5 100%);
-      transform: scale(1.08) rotate(-2deg);
+    .cta-btn:hover { background: linear-gradient(90deg,#fbbf24 20%,#4fd1c5 100%); transform: scale(1.06) rotate(-1deg); color: #fff; }
+    .cta-btn.secondary {
+      background: linear-gradient(90deg,#111827 10%,#4fd1c5 100%);
+      box-shadow: 0 4px 18px rgba(17,24,39,.18);
+    }
+    .cta-btn.secondary:hover { background: linear-gradient(90deg,#4fd1c5 10%,#111827 100%); }
+
+    .apply-card {
+      background: rgba(255,255,255,0.75);
+      border: 1px solid rgba(79,209,197,0.22);
+      border-radius: 18px;
+      padding: 14px 14px;
+      margin-top: 12px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+    }
+    .apply-toggle {
+      width: 100%;
+      border: 0;
+      border-radius: 16px;
+      padding: 12px 14px;
+      background: linear-gradient(90deg,#4fd1c5 20%,#fbbf24 100%);
       color: #fff;
+      font-weight: 900;
+      font-size: 1.05em;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform .16s;
     }
-    .faq-list details {
-      background:#f7fafc;
-      margin-bottom:8px;
-      border-radius:12px;
-      padding:8px 14px;
-      font-size:1.05em;
+    .apply-toggle:hover { transform: scale(1.02); }
+    .apply-toggle .arrow { display:inline-block; font-size: 1.15em; transition: transform .18s; }
+
+    /* ✅ 選擇題驗證區塊 */
+    .verify-wrap {
+      display: none;
+      margin-top: 12px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: #f7fafc;
+      border: 1px dashed rgba(79,209,197,0.45);
+      text-align: left;
     }
+    .verify-wrap.show { display: block; }
+    .verify-title {
+      font-weight: 900;
+      color: #111827;
+      margin-bottom: 8px;
+      letter-spacing: .04em;
+    }
+    .verify-q {
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .verify-options {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .opt {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.10);
+      border-radius: 14px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: transform .12s, border-color .12s;
+    }
+    .opt:hover { transform: scale(1.01); border-color: rgba(79,209,197,0.55); }
+    .opt input { transform: scale(1.1); }
+    .verify-actions {
+      margin-top: 10px;
+      display:flex;
+      gap:10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .verify-btn {
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 900;
+      letter-spacing: .06em;
+      color: #fff;
+      background: linear-gradient(90deg,#111827 10%,#4fd1c5 100%);
+      white-space: nowrap;
+    }
+    .verify-btn.light {
+      background: linear-gradient(90deg,#4fd1c5 10%,#fbbf24 100%);
+      color:#fff;
+    }
+    .verify-hint {
+      margin-top: 8px;
+      color: #6b7280;
+      font-size: 0.95em;
+      line-height: 1.55;
+    }
+    .verify-msg {
+      margin-top: 8px;
+      font-weight: 900;
+      font-size: 0.98em;
+      display:none;
+    }
+    .verify-msg.ok { color: #059669; display:block; }
+    .verify-msg.err { color: #dc2626; display:block; }
+
+    .apply-body { margin-top: 12px; display: none; }
+    .apply-body.open { display: block; }
+
+    .form-frame-wrap {
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 6px 20px rgba(79,209,197,0.18);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .form-frame-wrap iframe { width: 100%; height: 760px; border: 0; display: block; }
+
+    .apply-hint {
+      margin-top: 10px;
+      color: #6b7280;
+      font-size: 0.96em;
+      line-height: 1.65;
+      text-align: left;
+    }
+    .apply-actions { margin-top: 12px; text-align: center; }
+    .apply-actions .cta-btn { margin: 6px 8px; }
+
+    .faq-list details { background:#f7fafc; margin-bottom:8px; border-radius:12px; padding:8px 14px; font-size:1.05em; }
     .faq-list summary { font-weight:bold; cursor:pointer; }
     .faq-list div { color:#444; margin-top:2px; }
+
     .footer {
       margin-top: 18px;
       text-align: center;
@@ -276,16 +399,18 @@
       padding-bottom: 10px;
       letter-spacing: 0.04em;
     }
+
     @media (max-width: 600px) {
       .container { padding: 22px 5px 14px 5px; }
       h1 { font-size: 2.1rem; }
       .logo-wrap { width: 64px; height: 64px; margin: 0 auto 12px auto; }
       .logo-wrap img { width: 64px; height: 64px; }
       .yt-frame-wrap { max-width: 98vw; }
+      .cta-btn { padding: 11px 18px; }
+      .form-frame-wrap iframe { height: 820px; }
     }
   </style>
 
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WPF2YHMW05"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -294,8 +419,8 @@
     gtag('config', 'G-WPF2YHMW05');
   </script>
 </head>
+
 <body>
-  <!-- 泡泡動畫 -->
   <script>
     for (let i = 0; i < 18; i++) {
       const b = document.createElement('div');
@@ -316,9 +441,17 @@
       <img src="logo.png" alt="臭羽爛蝦 LOGO">
     </div>
     <h1>臭羽爛蝦</h1>
+
     <div class="desc">
       一群來自台南的羽球愛好者組成的快樂業餘團隊！<br>
       <span class="highlight">歡迎每一位熱愛運動、愛搞笑的新朋友加入！</span>
+    </div>
+
+    <div class="notice">
+      <span class="tag">入團審核制</span>
+      為避免詐騙／廣告帳號亂入，本團 <b>不公開群組邀請連結</b>。<br>
+      請先 <b>留言申請（填表自介）</b> 或 <b>私訊團長</b>：<br>
+      <b>暱稱｜程度｜常打時段｜常出沒球館</b>，通過後再邀請入群 🙌
     </div>
 
     <h2 class="section-title">📍 固定出沒地點</h2>
@@ -326,6 +459,7 @@
       <li>北安羽球館</li>
       <li>和緯羽球館</li>
     </ul>
+
     <h2 class="section-title">📆 每週活動日</h2>
     <ul class="schedule">
       <li>週五 晚上</li>
@@ -348,13 +482,78 @@
 
     <div class="cta">
       <div style="color:#222;font-weight:bold;margin-bottom:10px;">
-        想一起打球？歡迎私訊我們，<br>加入臭羽爛蝦的行列！
+        想一起打球？先留言申請（審核制），<br>通過後再邀請入群 🏸
       </div>
-      <a href="https://line.me/ti/g/UHS6Zer__D" target="_blank" class="cta-btn">加入LINE群</a>
+
+      <div class="apply-card">
+        <button id="applyToggle" class="apply-toggle" type="button" aria-expanded="false">
+          ✍️ 展開留言申請表（Google Form）
+          <span id="applyArrow" class="arrow">▼</span>
+        </button>
+
+        <div id="verifyWrap" class="verify-wrap">
+          <div class="verify-title">小驗證（防詐騙/機器人）</div>
+          <div class="verify-q">請問「臭羽爛蝦」固定出沒球館是哪一個？（選一個）</div>
+
+          <div class="verify-options" id="verifyOptions">
+            <label class="opt">
+              <input type="radio" name="club_place" value="beian">
+              北安羽球館
+            </label>
+            <label class="opt">
+              <input type="radio" name="club_place" value="hewei">
+              和緯羽球館
+            </label>
+            <label class="opt">
+              <input type="radio" name="club_place" value="taipei">
+              台北小巨蛋
+            </label>
+            <label class="opt">
+              <input type="radio" name="club_place" value="all">
+              以上皆是
+            </label>
+          </div>
+
+          <div class="verify-actions">
+            <button id="verifyBtn" class="verify-btn" type="button">通過驗證</button>
+            <button id="verifyReset" class="verify-btn light" type="button">重選</button>
+          </div>
+
+          <div class="verify-hint">
+            提示：答案就在本頁「固定出沒地點」區塊。
+          </div>
+          <div id="verifyMsg" class="verify-msg"></div>
+        </div>
+
+        <div id="applyBody" class="apply-body">
+          <div class="form-frame-wrap">
+            <iframe
+              id="applyFrame"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeNI3FzatBvkujOz8Z42CYxnXw3GdHorcWa_ZwYYFaPOMERlw/viewform?embedded=true"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="臭羽爛蝦入團留言申請表"
+            ></iframe>
+          </div>
+
+          <div class="apply-hint">
+            建議留言格式：暱稱｜程度｜Line ID<br>
+            ⚠️ 為避免詐騙，本頁不公開群組邀請連結；審核通過後再通知入群方式。
+          </div>
+
+          <div class="apply-actions">
+            <a id="openFormNewTab" href="#" target="_blank" class="cta-btn">在新分頁開啟表單</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <h2 class="section-title">🙋 常見問題 FAQ</h2>
     <div class="faq-list">
+      <details>
+        <summary>如何加入臭羽爛蝦？</summary>
+        <div>為避免詐騙，入團採審核制：請先填寫申請表（留言自介）或私訊團長，通過後再邀請入群。</div>
+      </details>
       <details><summary>每次活動收費怎麼算？</summary><div>平均一次約200~250元，按球耗調整。</div></details>
       <details><summary>團員程度如何？</summary><div>男生4-6，女生3-5。</div></details>
     </div>
@@ -363,15 +562,102 @@
       &copy; 2025 臭羽爛蝦 Badminton Club | 台南在地羽球團
       <br>
       <span style="font-size:0.92em;">
-        社群連結： 
-        <a href="https://line.me/ti/p/~joe94113" target="_blank" style="color:#4fd1c5;">
-          加團長 Line ID：joe94113
-        </a>｜ 
+        社群連結：
         <a href="https://www.youtube.com/channel/UC2ptpAI0AMUH8kOkL7a8Xow" target="_blank" style="color:#fbbf24;">
           YouTube頻道
         </a>
       </span>
     </div>
   </div>
+
+  <script>
+    const GOOGLE_FORM_EMBED_URL =
+      "https://docs.google.com/forms/d/e/1FAIpQLSeNI3FzatBvkujOz8Z42CYxnXw3GdHorcWa_ZwYYFaPOMERlw/viewform?embedded=true";
+
+    const CORRECT_VALUES = new Set(["beian", "hewei"]);
+
+    const applyToggle = document.getElementById('applyToggle');
+    const applyBody = document.getElementById('applyBody');
+    const applyArrow = document.getElementById('applyArrow');
+    const applyFrame = document.getElementById('applyFrame');
+    const openFormNewTab = document.getElementById('openFormNewTab');
+
+    const verifyWrap = document.getElementById('verifyWrap');
+    const verifyBtn = document.getElementById('verifyBtn');
+    const verifyReset = document.getElementById('verifyReset');
+    const verifyMsg = document.getElementById('verifyMsg');
+
+    applyFrame.src = GOOGLE_FORM_EMBED_URL;
+    openFormNewTab.href = GOOGLE_FORM_EMBED_URL.replace("embedded=true", "usp=sf_link");
+
+    let verified = false;
+
+    function setMsg(text, ok) {
+      verifyMsg.textContent = text;
+      verifyMsg.className = "verify-msg " + (ok ? "ok" : "err");
+    }
+
+    function openForm() {
+      applyBody.classList.add('open');
+      applyToggle.setAttribute('aria-expanded', 'true');
+      applyArrow.style.transform = 'rotate(180deg)';
+      setTimeout(() => {
+        applyBody.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 120);
+    }
+
+    function closeForm() {
+      applyBody.classList.remove('open');
+      applyToggle.setAttribute('aria-expanded', 'false');
+      applyArrow.style.transform = 'rotate(0deg)';
+    }
+
+    function getSelectedValue() {
+      const el = document.querySelector('input[name="club_place"]:checked');
+      return el ? el.value : null;
+    }
+
+    applyToggle.addEventListener('click', () => {
+      if (applyBody.classList.contains('open')) {
+        closeForm();
+        return;
+      }
+
+      if (!verified) {
+        verifyWrap.classList.add('show');
+        setTimeout(() => {
+          verifyWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 80);
+        return;
+      }
+
+      openForm();
+    });
+
+    verifyBtn.addEventListener('click', () => {
+      const val = getSelectedValue();
+      if (!val) {
+        setMsg("請先選擇一個答案再送出～", false);
+        return;
+      }
+
+      if (CORRECT_VALUES.has(val)) {
+        verified = true;
+        setMsg("驗證成功！已開啟留言申請表 ✅", true);
+        setTimeout(() => {
+          verifyWrap.classList.remove('show');
+          openForm();
+        }, 300);
+      } else {
+        setMsg("答案不正確，再試一次～（提示：看一下固定出沒地點）", false);
+      }
+    });
+
+    verifyReset.addEventListener('click', () => {
+      document.querySelectorAll('input[name="club_place"]').forEach(r => r.checked = false);
+      verifyMsg.textContent = "";
+      verifyMsg.className = "verify-msg";
+    });
+  </script>
 </body>
 </html>
